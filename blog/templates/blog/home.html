@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Django Blog</title></head>
+<body>
+<h1>Published Posts</h1>
+<ul>
+{% for post in posts %}
+    <li>{{ post.title }}</li>
+{% empty %}
+    <li>No posts yet.</li>
+{% endfor %}
+</ul>
+</body>
+</html>
